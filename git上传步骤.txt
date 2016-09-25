@@ -1,0 +1,91 @@
+   一、查看状态 
+
+    第一步：
+	
+	先打开你的文件夹  cd 文件夹名
+	
+    第二步：
+
+	输入 git init 初始化
+	
+    第三步：
+
+	输入 git status 查看状态 若出现红色字体，则表示未添加
+
+    第四步：
+
+	输入 git add -A（不推荐），最好是 git add 文件夹名
+
+     第五步：
+
+	然后再查看一下状态 git status ，出现绿色字体则表示添加成功，出现红色字体
+
+   二、上传到远程仓库
+
+    第六步：
+
+	输入 git config --global user.name "名字" 
+
+    第七步：
+
+	输入 git config --global user.email "随便写"
+
+    第八步：
+
+	输入 git commit -m "描述"
+
+    第九步：
+
+	输入 git log 出现 commit 0cfc2da87c0014d35fc0454b93c5f0d4db1d1963
+
+    第十步：
+
+	输入 ssh-keygen -t rsa -C "you@aa.com"
+
+	打开settings 中的 SSH  将c盘中的秘钥复制到里面
+
+     第十一步：
+
+	输入 ssh -T git@github.com
+
+
+    第十二步：
+
+	输入 git remote add origin git@github.com:zjrym/merk.git
+
+    
+
+    第十三步：
+		git remote
+
+    第十四步：
+
+    	 git pull origin master
+
+    第十五步：
+
+	git push -u origin master
+	
+
+
+
+
+第二次上传文件
+
+	第一步
+		打开文件夹
+	
+	第二步
+
+		git add 文件夹名
+
+	第三步
+
+		git status
+
+	第四步
+
+		git push -u origin master
+	
+	
+	
